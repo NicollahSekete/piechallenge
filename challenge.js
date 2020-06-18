@@ -15,11 +15,13 @@
 //above is a basic set up to see if it true or false
 
 const pieTime = (pieEatersOne, slicesEatenOne)=>{
-    if (Number.isInteger(slicesEatenOne/pieEatersOne)) {
+    let X = slicesEatenOne % pieEatersOne
+    if (X ==0) {
         return 'true'; 
     }
     return 'false'
     }
-    console.log(pieTime(2,2))
-    console.log(pieTime(27,2))
-    console.log(pieTime(5,15))
+    console.log(pieTime(2,2));
+    console.log(pieTime(9,6));
+    
+    
