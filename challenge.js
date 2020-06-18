@@ -14,14 +14,16 @@
 //}
 //above is a basic set up to see if it true or false
 
-const pieTime = (pieEatersOne, slicesEatenOne)=>{
-    let X = slicesEatenOne % pieEatersOne
-    if (X ==0) {
+const pieTime = (fullPie,pieEatersOne, slicesEatenOne)=>{
+    let workOut = pieEatersOne* slicesEatenOne
+    //let X = slicesEatenOne % pieEatersOne
+    if (workOut ==fullPie) {
         return 'true'; 
     }
     return 'false'
     }
-    console.log(pieTime(2,2));
-    console.log(pieTime(9,6));
+    console.log(pieTime(14,3,5));
+    console.log(pieTime(10,5, 3));
+    console.log(pieTime(10,2,5))
     
     
